@@ -1,0 +1,5 @@
+language: go
+services:
+    - mysql
+before_install:
+    - mysql -u root < tests/create_database.sql 
